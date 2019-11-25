@@ -1,0 +1,14 @@
+.image-hotel-preview{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.fa-star{
+    color: #00ace6;
+}
+
+.line{
+    border-right: 1px solid #00ace6;
+}
