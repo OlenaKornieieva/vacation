@@ -1,0 +1,25 @@
+.search-panel {
+    background-color: #00ace6;
+    margin: 40px 8px;
+    padding: 10px;
+}
+
+.input-group-addon {
+    background-color: white;
+    color: #00ace6;
+}
+
+.checkbox-panel {
+    margin: 12px 0;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+.form-check-label {
+    color: white;
+}
+
+

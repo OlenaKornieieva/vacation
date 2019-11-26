@@ -1,0 +1,37 @@
+.header-container {
+    background-color: white;
+}
+
+.header {
+    margin: 15px 8px;
+}
+
+.btn-currency {
+    width: 70px;
+    height: 30px;
+    background-color: #00ace6;
+    border: none;
+    color: white;
+}
+
+.btn-cart {
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #00ace6;
+    color: #00ace6;
+}
+
+.tel {
+    font-size: 30px;
+    font-weight: bold;
+    color: #353f48;
+}
+
+.tel-text {
+    color: #353f48;
+}
+
+.header-navbar {
+    background-color: #dfdfdf;
+}

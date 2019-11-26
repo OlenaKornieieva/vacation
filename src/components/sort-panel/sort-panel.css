@@ -1,4 +1,17 @@
-.hotels-type{
-    height: 50px;
+.hotels-type {
+    height: 90px;
     background-color: #ff0066;
+    margin-right: 5px;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
 }
+
+.fa-star {
+    color: #ffff66;
+}
+
+.search-result {
+    margin-right: -8px;
+}
+

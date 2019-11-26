@@ -1,0 +1,23 @@
+.filter-panel {
+    background-color: #005580;
+    color: white;
+    padding: 0 10px 10px 10px;
+}
+
+.filter-panel > div, h3 {
+    border-bottom: 1px solid #00ace6;
+    padding: 16px 0;
+}
+
+.fa-star.star-blue {
+    color: #6699cc;
+}
+
+.status-stars > i {
+    padding-left: 4px;
+}
+
+.filter-btn {
+    width: 100%;
+    background-color: white;
+}

@@ -1,14 +1,32 @@
-.image-hotel-preview{
+.image-hotel-preview {
     width: 150px;
     height: 150px;
     object-fit: cover;
     object-position: 50% 50%;
 }
 
-.fa-star{
+.line {
+    border-right: 1px solid #00ace6;
+    margin: 20px 0;
+}
+
+.hotel-preview {
+    background-color: white;
+    margin: 10px -8px 10px 0;
+}
+
+.price {
     color: #00ace6;
 }
 
-.line{
-    border-right: 1px solid #00ace6;
+.details-btn {
+    background-color: #00cc00;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.stars {
+    font-size: 30px;
+    color: #00ace6;
 }

@@ -1,0 +1,13 @@
+.nav-footer {
+    background-color: #353f48;
+    color: white;
+}
+
+.social-net, .copyright {
+    margin: 20px 0;
+}
+
+.social-net i {
+    font-size: 30px;
+    margin-right: 15px;
+}

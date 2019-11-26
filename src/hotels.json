@@ -4,6 +4,7 @@
     "name": "Corendon Vitality Hotel Amsterdam",
     "price": 1130,
     "stars": 3,
+    "location": "Amsterdam",
     "image": "https://cdn.tui.be/img/static/im1000/78800/78865/78865L.JPG"
   },
   {
@@ -11,6 +12,7 @@
     "name": "Ramada Apollo Amsterdam Center",
     "price": 1199,
     "stars": 4,
+    "location": "Amsterdam",
     "image": "https://www.dvm-tour.ru/upload/iblock/eb7/ramada_apollo_01.jpg"
   },
   {
@@ -18,6 +20,7 @@
     "name": "Mercure Amsterdam City",
     "price": 1238,
     "stars": 4,
+    "location": "B",
     "image": "https://media-cdn.tripadvisor.com/media/photo-s/12/d5/c3/92/mercure-hotel-amsterdam.jpg"
   },
   {
@@ -25,6 +28,7 @@
     "name": "Holiday Inn Express Arena Towers",
     "price": 1410,
     "stars": 3,
+    "location": "B",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyOJX4D-FHr4Q1IZnXIHq8zppTi_kvg3taotBsGu1oEgIZD4w5&s"
   }
 ]

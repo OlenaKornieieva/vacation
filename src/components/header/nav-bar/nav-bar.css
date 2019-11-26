@@ -1,0 +1,12 @@
+.header-nav-item {
+    border-right: 1px solid black;
+}
+
+.header-nav-item .nav-link {
+    padding: 0;
+    margin: 0 15px;
+}
+
+.header-nav-item:last-child {
+    border-style: none;
+}
