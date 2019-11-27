@@ -10,3 +10,13 @@
 .header-nav-item:last-child {
     border-style: none;
 }
+
+@media only screen and (max-width: 992px) {
+    .nav-link {
+        font-size: 8px;
+    }
+
+    .header-nav-item {
+        border-style: none;
+    }
+}

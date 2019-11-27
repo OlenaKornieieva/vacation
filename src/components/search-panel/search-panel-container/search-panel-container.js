@@ -10,7 +10,7 @@ import Passengers from "../passengers/passengers";
 class SearchPanelContainer extends React.Component {
 
     state = {
-        searchQuery: ''
+        searchQuery: '',
     };
 
     handleCityChoose = (e) => {
@@ -19,7 +19,7 @@ class SearchPanelContainer extends React.Component {
 
     render() {
 
-        const {hotels, updateHotels, startDate, onStartDateSelect, endDate, onEndDateSelect} = this.props;
+        const {hotels, updateHotels, startDate, onStartDateSelect, endDate, onEndDateSelect, onPassengersChange, selectValue} = this.props;
         const {searchQuery} = this.state;
 
         return (
@@ -36,13 +36,17 @@ class SearchPanelContainer extends React.Component {
                         </label>
                     </div>
                 </div>
-                <div className='d-flex justify-content-between'>
+                <div className='d-flex justify-content-between search-container'>
                     <SearchBtn
                         hotels={hotels}
                         updateHotels={updateHotels}
                         searchQuery={searchQuery}
+                        selectValue={selectValue}
                     />
-                    <Passengers/>
+                    <Passengers
+                        onPassengersChange={onPassengersChange}
+                        selectValue={selectValue}
+                    />
                     <CalendarReturn
                         endDate={endDate}
                         onEndDateSelect={onEndDateSelect}

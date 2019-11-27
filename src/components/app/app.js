@@ -6,15 +6,30 @@ import FooterContainer from "../footer/footer-container/footer-container";
 import ResultsView from "../results-view/results-view";
 import SearchPanelContainer from "../search-panel/search-panel-container/search-panel-container";
 import SortPanel from "../sort-panel/sort-panel";
-import hotels from '../../hotels';
+import HotelService from "../services/hotel-service";
+import Spinner from "../spiner/spiner";
+import ErrorIndicator from "../error-indicator/error-indicator";
 
 class App extends React.Component {
 
     state = {
-        hotels,
+        hotels: [],
+        error: null,
         startDate: new Date(),
-        endDate: new Date()
+        endDate: new Date(),
+        selectValue: '1'
     };
+
+    hotelService = new HotelService();
+
+    componentDidMount() {
+        this.hotelService.getHotels().then(hotels => {
+            this.initialHotels = hotels.slice();
+            this.setState({hotels: this.initialHotels});
+        }).catch(error => {
+            this.setState({error: error.message})
+        })
+    }
 
     updateHotels = (config) => {
         this.setState(config);
@@ -28,28 +43,46 @@ class App extends React.Component {
         this.setState({endDate: date});
     };
 
+    handlePassengersChange = (e) => {
+        this.setState({selectValue: e.target.value});
+    };
+
     render() {
+
+        const {hotels, error, startDate, endDate, selectValue} = this.state;
+
+        if (hotels.length === 0 && !error) {
+            return <Spinner/>
+        }
+        if (error) {
+            return <ErrorIndicator/>
+        }
+
         return (
-            <div>
+            <div className='app'>
                 <HeaderContainer/>
                 <SearchPanelContainer
-                    hotels={this.state.hotels}
+                    hotels={this.initialHotels}
                     updateHotels={this.updateHotels}
-                    startDate={this.state.startDate}
+                    startDate={startDate}
                     onStartDateSelect={this.handleDepartureSelect}
-                    endDate={this.state.endDate}
+                    endDate={endDate}
                     onEndDateSelect={this.handleReturnSelect}
+                    selectValue={selectValue}
+                    onPassengersChange={this.handlePassengersChange}
                 />
                 <div className='row m-0'>
-                    <div className='col-sm-12 p-0 d-flex justify-content-between'>
+                    <div className='col-sm-12 p-0 d-flex justify-content-between panels'>
                         <div className='col-sm-8 p-0 m-2'>
                             <SortPanel/>
                             <ResultsView
-                                hotels={this.state.hotels}
-                                startDate={this.state.startDate}
+                                hotels={hotels}
+                                startDate={startDate}
                                 onStartDateSelect={this.handleDepartureSelect}
-                                endDate={this.state.endDate}
+                                endDate={endDate}
                                 onEndDateSelect={this.handleReturnSelect}
+                                selectValue={selectValue}
+                                onPassengersChange={this.handlePassengersChange}
                             />
                         </div>
                         <div className='col-sm-3 p-0 m-2'>

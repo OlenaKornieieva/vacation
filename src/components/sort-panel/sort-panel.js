@@ -10,14 +10,14 @@ const SortPanel = () => {
                         <span className='pr-1'>הכי משתלם</span>
                         <i className="far fa-thumbs-up"/>
                     </div>
-                    <div className='d-flex justify-content-between'>
+                    <div className='d-flex justify-content-between align-items-center'>
                         <span>$1199</span>
-                        <div>
+                        <span>
                             <i className="fas fa-star"/>
                             <i className="fas fa-star"/>
                             <i className="fas fa-star"/>
                             <i className="fas fa-star"/>
-                        </div>
+                        </span>
                     </div>
                 </div>
                 <div className='col-sm-4 hotels-type d-flex flex-column'>
@@ -25,14 +25,14 @@ const SortPanel = () => {
                         <span className='pr-1'>הכי פופולרי</span>
                         <i className="far fa-star text-white"/>
                     </div>
-                    <div className='d-flex justify-content-between'>
+                    <div className='d-flex justify-content-between align-items-center'>
                         <span>$1238</span>
-                        <div>
+                        <span>
                             <i className="fas fa-star"/>
                             <i className="fas fa-star"/>
                             <i className="fas fa-star"/>
                             <i className="fas fa-star"/>
-                        </div>
+                        </span>
                     </div>
                 </div>
                 <div className='col-sm-4 hotels-type d-flex flex-column'>
@@ -40,13 +40,13 @@ const SortPanel = () => {
                         <span className='pr-1'>הכי זול</span>
                         <i className="fas fa-comment-dollar"/>
                     </div>
-                    <div className='d-flex justify-content-between'>
+                    <div className='d-flex justify-content-between align-items-center'>
                         <span>$1130</span>
-                        <div>
+                        <span>
                             <i className="fas fa-star"/>
                             <i className="fas fa-star"/>
                             <i className="fas fa-star"/>
-                        </div>
+                        </span>
                     </div>
                 </div>
             </div>

@@ -79,7 +79,7 @@ const FilterPanel = () => {
             <div>
                 <h5 className='d-flex justify-content-end'>בסיס אירוח</h5>
                 <div className="form-check d-flex justify-content-between">
-                    <span>$1199</span>
+                    <span className='pb-2'>$1199</span>
                     <label className="form-check-label" htmlFor="check1">
                         <input type="checkbox" className="form-check-input" id="check1" name="option1"
                                value="something"/>
@@ -95,7 +95,7 @@ const FilterPanel = () => {
             </div>
             <div>
                 <h5 className='d-flex justify-content-end'>זמינות</h5>
-                <div className="form-check d-flex justify-content-end">
+                <div className="form-check d-flex justify-content-end pb-3">
                     <label className="form-check-label" htmlFor="check1">
                         <input type="checkbox" className="form-check-input" id="check1" name="option1"
                                value="something"/>

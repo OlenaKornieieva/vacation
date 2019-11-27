@@ -1,7 +1,7 @@
 import React from 'react';
 import './hotel-preview.css';
 
-const HotelPreview = ({id, name, price, stars, location, image, startDate, endDate}) => {
+const HotelPreview = ({id, name, price, stars, location, image, startDate, endDate, selectValue}) => {
 
     let star = '★';
     let addStars = (stars) => {
@@ -22,10 +22,10 @@ const HotelPreview = ({id, name, price, stars, location, image, startDate, endDa
             <div className='col-sm-3 d-flex flex-column justify-content-center align-items-center line'>
                 <h1 className='price m-0'>${price}</h1>
                 <span className='price'>מחיר לאדם</span>
-                <span className='p-2'>${price * 2}<span className='pl-1'>סכ''נ</span></span>
+                <span className='p-2'>${price * (+selectValue)}<span className='pl-1'>סכ''נ</span></span>
                 <button type='button' className='btn details-btn'>פרטים</button>
             </div>
-            <div className='d-flex flex-column justify-content-end p-3'>
+            <div className='d-flex flex-column justify-content-end p-3 hotel-description'>
                 <h4 className='d-flex justify-content-end'>
                     {name.toUpperCase()}
                 </h4>
@@ -34,7 +34,7 @@ const HotelPreview = ({id, name, price, stars, location, image, startDate, endDa
                         <span className='stars'>{addStars(stars)}</span>
                         <span>{departure}<span className='pl-1 font-weight-bold'>:יציאה</span></span>
                         <span>{comeBack}<span className='pl-1 font-weight-bold'>:חזרה</span></span>
-                        <span className='font-weight-bold'>7 לילות | חצי פנסיון | כולל העברות</span>
+                        <span className='type'>7 לילות | חצי פנסיון | כולל העברות</span>
                     </div>
                     <img src={image}
                          className='image-hotel-preview'

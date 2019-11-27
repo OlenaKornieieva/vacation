@@ -21,3 +21,16 @@
     width: 100%;
     background-color: white;
 }
+
+@media only screen and (max-width: 768px) {
+    .filter-panel {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .slider.slider-horizontal {
+        width: 180px;
+    }
+}
+

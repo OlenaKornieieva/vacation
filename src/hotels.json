@@ -20,7 +20,7 @@
     "name": "Mercure Amsterdam City",
     "price": 1238,
     "stars": 4,
-    "location": "B",
+    "location": "Amsterdam",
     "image": "https://media-cdn.tripadvisor.com/media/photo-s/12/d5/c3/92/mercure-hotel-amsterdam.jpg"
   },
   {
@@ -28,7 +28,31 @@
     "name": "Holiday Inn Express Arena Towers",
     "price": 1410,
     "stars": 3,
-    "location": "B",
+    "location": "Amsterdam",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyOJX4D-FHr4Q1IZnXIHq8zppTi_kvg3taotBsGu1oEgIZD4w5&s"
+  },
+  {
+    "id": "gdhg556jhsl",
+    "name": "Urban Bivouac Hotel",
+    "price": 999,
+    "stars": 3,
+    "location": "Paris",
+    "image": "https://r-cf.bstatic.com/images/hotel/max1280x900/150/150037271.jpg"
+  },
+  {
+    "id": "gdhg743jhsl",
+    "name": "Idol Hotel",
+    "price": 1089,
+    "stars": 4,
+    "location": "Paris",
+    "image": "https://r-cf.bstatic.com/images/hotel/max1280x900/407/40705531.jpg"
+  },
+  {
+    "id": "gdhg743je6l",
+    "name": "Select Hotel",
+    "price": 1289,
+    "stars": 4,
+    "location": "Paris",
+    "image": "https://q-cf.bstatic.com/images/hotel/max1280x900/782/78264832.jpg"
   }
 ]

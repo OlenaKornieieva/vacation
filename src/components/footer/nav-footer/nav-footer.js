@@ -10,10 +10,10 @@ const NavFooter = () => {
     const navFlights = ['טיסות לחו"ל', 'טיסות לואו קוסט', 'טיסות זולות', 'טיסות לתאילנד', 'טיסות לברזיל', 'טיסות לברצלונה', 'טיסות ללונדון', 'טיסות לניו יורק', 'טיסות לפאריס', 'טיסות לאמסטרדם', 'טיסות לרומא'];
 
     return (
-        <div className='col-sm-12 d-flex justify-content-between align-items-start pt-4'>
+        <div className='col-sm-12 d-flex justify-content-between align-items-start pt-4 nav-container'>
             <nav className='navbar'>
                 <ul className='navbar-nav'>
-                    <h5 className='d-flex justify-content-end'>טיולים מאורגנים</h5>
+                    <h5 className='d-flex justify-content-end align-self-end'>טיולים מאורגנים</h5>
                     {navTrips.map(item => {
                         return (
                             <li className='nav-item d-flex justify-content-end' key={item}>
@@ -27,7 +27,7 @@ const NavFooter = () => {
             </nav>
             <nav className='navbar'>
                 <ul className='navbar-nav'>
-                    <h5 className='d-flex justify-content-end'>השנרת רנב</h5>
+                    <h5 className='d-flex justify-content-end align-self-end'>השנרת רנב</h5>
                     {navCarRental.map(item => {
                         return (
                             <li className='nav-item d-flex justify-content-end' key={item}>
@@ -41,7 +41,7 @@ const NavFooter = () => {
             </nav>
             <nav className='navbar'>
                 <ul className='navbar-nav'>
-                    <h5 className='d-flex justify-content-end'>חבילות נופש</h5>
+                    <h5 className='d-flex justify-content-end align-self-end'>חבילות נופש</h5>
                     {navVacationPackages.map(item => {
                         return (
                             <li className='nav-item d-flex justify-content-end' key={item}>
@@ -55,7 +55,7 @@ const NavFooter = () => {
             </nav>
             <nav className='navbar'>
                 <ul className='navbar-nav'>
-                    <h5 className='d-flex justify-content-end'>מלונות</h5>
+                    <h5 className='d-flex justify-content-end align-self-end'>מלונות</h5>
                     {navHotels.map(item => {
                         return (
                             <li className='nav-item d-flex justify-content-end' key={item}>
@@ -69,7 +69,7 @@ const NavFooter = () => {
             </nav>
             <nav className='navbar'>
                 <ul className='navbar-nav'>
-                    <h5 className='d-flex justify-content-end'>טיסות</h5>
+                    <h5 className='d-flex justify-content-end align-self-end'>טיסות</h5>
                     {navFlights.map(item => {
                         return (
                             <li className='nav-item d-flex justify-content-end' key={item}>

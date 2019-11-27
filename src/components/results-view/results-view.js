@@ -1,7 +1,7 @@
 import React from 'react';
 import HotelPreview from "../hotel-preview/hotel-preview";
 
-const ResultsView = ({hotels, startDate, endDate}) => {
+const ResultsView = ({hotels, startDate, endDate, selectValue}) => {
 
     return (
         <div>
@@ -14,6 +14,7 @@ const ResultsView = ({hotels, startDate, endDate}) => {
                               location={item.location}
                               startDate={startDate}
                               endDate={endDate}
+                              selectValue={selectValue}
                 />
             )}
         </div>

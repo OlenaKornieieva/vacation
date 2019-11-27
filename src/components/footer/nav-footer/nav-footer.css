@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) {
+    .nav-container h5 {
+        flex-direction: column;
+        align-items: end;
+        font-size: 12px;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+    }
+}

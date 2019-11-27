@@ -7,11 +7,11 @@ const SearchBar = ({searchQuery, onCityChoose}) => {
                 <div className="input-group addon">
                     <input
                         type="text"
-                        className="form-control border-right-0 rounded-0 border-secondary"
+                        className="form-control border-0 rounded-0"
                         value={searchQuery}
                         onChange={onCityChoose}
                     />
-                    <span className="input-group-addon btn border border-left-0 border-bottom rounded-0 border-secondary">
+                    <span className="input-group-addon btn border-0 rounded-0">
                         :יעד
                         <i className="fas fa-plane pl-2"/>
                     </span>

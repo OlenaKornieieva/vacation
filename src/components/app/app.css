@@ -5,3 +5,9 @@ body {
 html {
     overflow-x: hidden;
 }
+
+@media only screen and (max-width: 768px) {
+    .panels {
+        flex-direction: column;
+    }
+}

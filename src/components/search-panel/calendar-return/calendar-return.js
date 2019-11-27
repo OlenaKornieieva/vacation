@@ -10,12 +10,12 @@ const CalendarReturn = ({endDate, onEndDateSelect}) => {
                 <div className="input-group addon">
                     <input
                         type="text"
-                        className="form-control border-right-0 rounded-0 border-secondary"
+                        className="form-control border-0 rounded-0"
                         value={value}
                         onClick={onClick}
                     />
                     <span
-                        className="input-group-addon btn border border-left-0 border-bottom rounded-0 border-secondary">
+                        className="input-group-addon btn border-0 rounded-0">
                         חזרה
                         <i className="far fa-calendar-alt pl-2"/>
                     </span>

@@ -19,9 +19,9 @@ const HeaderContainer = () => {
                             <span className='d-flex align-items-center ml-1 tel-text'>חייגו עכשיב</span>
                         </div>
                     </div>
-                    <h1>LetsTravel</h1>
+                    <h1 className='brand'>LetsTravel</h1>
                 </div>
-                <nav className='header-navbar navbar navbar-expand-sm d-flex justify-content-end'>
+                <nav className='header-navbar navbar navbar-expand-lg d-flex justify-content-end'>
                     <NavBar/>
                 </nav>
             </div>

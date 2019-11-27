@@ -35,3 +35,14 @@
 .header-navbar {
     background-color: #dfdfdf;
 }
+
+@media only screen and (max-width: 600px) {
+    .tel, .tel-text {
+        font-size: 8px;
+    }
+
+    .brand {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
